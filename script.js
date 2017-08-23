@@ -5,6 +5,7 @@ var guessValue = document.querySelector('.guess-value');
 var clearBtn = document.getElementById('clear-button');
 var feedback = document.querySelector('.feedback');
 var resetBtn = document.querySelector('.reset-btn');
+var lastGuess = document.querySelector('.last-guess');
 
 
 guessBtn.addEventListener('click', answer);
@@ -17,6 +18,7 @@ function answer(event) {
 	var theNumber = parseInt(firstInput.value);
 	guessValue.innerText = theNumber;
 	console.log(theNumber)
+	enableBtn()
 }
 
 function clear(event) {
@@ -28,10 +30,24 @@ function reset(event) {
 	window.location.reload(true);
 }
 
+function enableBtn() {
+	resetBtn.disabled=false
+	clearBtn.disabled=false
+}
+
 function checkNumber() {
 	var theNumber = parseInt(firstInput.value);
+	lastGuess.innerText = "Your last guess was."
+	
+	if (theNumber > 100) {
+		feedback.innerText = "Please choose a number < or = 100"
+	}
 
-	if (theNumber > randomNumber) {
+	else if (theNumber < 1) {
+		feedback.innerText = "Please choose a number > 0"
+	}
+
+	else if (theNumber > randomNumber) {
 		feedback.innerText = "That is too high.";
 	}
 
@@ -44,7 +60,7 @@ function checkNumber() {
 	}
 
 	else { 
-		feedback.innerText = "what have you done!"
+		feedback.innerText = "what have you done! Please enter a number."
 	}
 }
 

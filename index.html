@@ -19,19 +19,19 @@
 					<input class="first-input" type ="number" name="guess" placeholder="Enter your guess"/>
 					<div>
 					<input class="btn" id="guess-btn" type="submit" name="submit-guess" value="Guess"/>
-					<input class="btn" id="clear-button" type="submit" name="clear" value="Clear"/>
+					<input class="btn" id="clear-button" type="submit" disabled  name="clear" value="Clear"/>
 					</div>
 				</form>
 			</article>
 
 			<article id="second-box">
-				<h3>Your last guess was</h3>
-				<div>
+				<h3 class="last-guess"></h3>
+				<div> 
 				<h2 class="guess-value"></h2>
 				</div>
 				<h3 class="feedback"></h3>
 				<form>
-					<input class="reset-btn" type="button" name="reset" value="Reset">
+					<input class="reset-btn" type="button" name="reset" disabled value="Reset">
 				</form>
 			</article>
 		</section>

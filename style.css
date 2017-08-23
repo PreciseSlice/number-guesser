@@ -37,7 +37,7 @@ input {
 }
 
 .btn {
-	background-color: #D0D2D3;
+	background-color: #929497;
 	color: #FFFFFF;
 	border-radius: 20px;
 	width: 40%;
@@ -117,7 +117,7 @@ h3 {
 }
 
 .reset-btn {
-	background-color: #D0D2D3;
+	background-color: #929497;
 	color: #FFFFFF;
 	border-radius: 20px;
 	width: 78%;
@@ -130,4 +130,12 @@ h3 {
 .reset-btn:hover {
 	background-color: #EB008B;
 	color: #FFFFFF;
+}
+
+:disabled {
+	background-color: #D0D2D3;
+}
+
+:disabled:hover {
+	background-color: #D0D2D3;
 }
