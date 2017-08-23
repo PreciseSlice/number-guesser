@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<!--stylesheet by: Eric Meyers http://meyerweb.com/eric/tools/css/reset/ -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">		
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Number Guesser</title>
+	</head>
+	<body>
+
+		<header>
+			<h1>Number <span>Guesser</span></h1>
+		</header>
+
+		<section>
+			<article>
+				<form>
+					<input class="first-input" type ="number" name="guess" placeholder="Enter your guess"/>
+					<div>
+					<input class="btn" id="guess-btn" type="submit" name="submit-guess" value="Guess"/>
+					<input class="btn" id="clear-button" type="submit" name="clear" value="Clear"/>
+					</div>
+				</form>
+			</article>
+
+			<article id="second-box">
+				<h3>Your last guess was</h3>
+				<div>
+				<h2 class="guess-value"></h2>
+				</div>
+				<h3 class="feedback"></h3>
+				<form>
+					<input class="reset-btn" type="button" name="reset" value="Reset">
+				</form>
+			</article>
+		</section>
+		
+		<script type="text/javascript" src="script.js"></script>
+
+	</body>
+</html>

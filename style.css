@@ -1,0 +1,133 @@
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+header {
+	background-color: #404041;
+	text-align: center;
+	/*padding: 0 25px;*/
+	height: 125px;
+}
+
+header h1 {
+	display: inline-block;
+	font-size: 53px;
+	margin-top: 31.25px;
+	width: 33%;
+	margin-right: auto;
+	margin-left: auto;
+	color: #ED458B;
+	padding-right: 5px;
+	font-weight: 700;
+	text-align: center;
+}
+
+span {
+	color: #E6E7E8;
+	font-weight: 300;
+}
+
+input {
+	margin-bottom: 25px;
+	margin-right: 15px;
+	font-size: 23px;
+	font-weight: 300;
+	padding: 3px;
+	border: solid 2px #D0D2D3;
+}
+
+.btn {
+	background-color: #D0D2D3;
+	color: #FFFFFF;
+	border-radius: 20px;
+	width: 40%;
+	border: none;
+	font-size: 20px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	padding: 5px;
+	margin-top: 10px;
+}
+
+.btn:hover {
+	background-color: #EB008B;
+	color: #FFFFFF;
+}
+
+section {
+	text-align: center;
+	width: 33%;
+	margin: auto;
+}
+
+article {
+	width: 100%;
+	margin: auto;
+	height: 175px;
+}
+
+.first-input {
+	width: 80%;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #D0D2D3;
+    font-family: "Open Sans", sans-serif;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #D0D2D3;
+   font-family: "Open Sans", sans-serif;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #D0D2D3;
+   font-family: "Open Sans", sans-serif;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #D0D2D3;
+   font-family: "Open Sans", sans-serif;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #D0D2D3;
+   font-family: "Open Sans", sans-serif;
+}
+
+form {
+	margin-top: 40px;
+	margin-bottom: 50px;
+	display: inline-block;
+	width: 100%;
+}
+
+h2 {
+	font-size: 150px;
+	color: #EB008B;
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+
+h3 {
+	color: #404041;
+	font-weight: 300;
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+.reset-btn {
+	background-color: #D0D2D3;
+	color: #FFFFFF;
+	border-radius: 20px;
+	width: 78%;
+	border:none;
+	font-size: 20px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+.reset-btn:hover {
+	background-color: #EB008B;
+	color: #FFFFFF;
+}
