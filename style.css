@@ -66,6 +66,10 @@ article {
 	height: 175px;
 }
 
+.first-box {
+	margin-bottom: 75px;
+}
+
 .first-input {
 	width: 80%;
 }
@@ -96,10 +100,19 @@ article {
 }
 
 form {
-	margin-top: 40px;
+	margin-top: 30px;
 	margin-bottom: 50px;
 	display: inline-block;
 	width: 100%;
+}
+
+.value-qauntity {
+	width: 37%;
+}
+
+.instructions {
+	width: auto;
+	margin-bottom: 30px;
 }
 
 h2 {
@@ -116,6 +129,15 @@ h3 {
 	font-size: 20px;
 }
 
+.buttons {
+	margin-bottom: 25px;
+}
+
+.second-box {
+	position: absolute;
+	margin-top: 100px;
+}
+
 .reset-btn {
 	background-color: #929497;
 	color: #FFFFFF;
@@ -125,6 +147,7 @@ h3 {
 	font-size: 20px;
 	font-weight: 300;
 	letter-spacing: 1px;
+	margin-top: 40px;
 }
 
 .reset-btn:hover {

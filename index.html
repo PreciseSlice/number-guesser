@@ -14,10 +14,15 @@
 		</header>
 
 		<section>
-			<article>
+			<article class="first-box">
 				<form>
+					<h3 class="instructions">Pick a number between 1 and 100 or enter the range of numbers you would like to guess below!</h3>
+					<span>
+					<input class="value-qauntity" id="min" type="number" name="min" placeholder="min value."> 
+					<input class="value-qauntity" id="max" type="number" name="max" placeholder="max value."> 
+					</span>
 					<input class="first-input" type ="number" name="guess" placeholder="Enter your guess"/>
-					<div>
+					<div class="buttons">
 					<input class="btn" id="guess-btn" type="submit" name="submit-guess" value="Guess"/>
 					<input class="btn" id="clear-button" type="submit" disabled  name="clear" value="Clear"/>
 					</div>
@@ -25,15 +30,16 @@
 			</article>
 
 			<article id="second-box">
-				<h3 class="last-guess"></h3>
+				<h3 class="last-guess">Step right up!</h3>
 				<div> 
-				<h2 class="guess-value"></h2>
+				<h2 class="guess-value">?</h2>
 				</div>
-				<h3 class="feedback"></h3>
+				<h3 class="feedback">Take a guess!</h3>
 				<form>
 					<input class="reset-btn" type="button" name="reset" disabled value="Reset">
+				</article>
+
 				</form>
-			</article>
 		</section>
 		
 		<script type="text/javascript" src="script.js"></script>

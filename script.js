@@ -6,12 +6,25 @@ var clearBtn = document.getElementById('clear-button');
 var feedback = document.querySelector('.feedback');
 var resetBtn = document.querySelector('.reset-btn');
 var lastGuess = document.querySelector('.last-guess');
+var minInput = document.getElementById('min');
+var maxInput = document.getElementById('max');
+var max = 100;
+var min = 0;
 
 
 guessBtn.addEventListener('click', answer);
 guessBtn.addEventListener('click', checkNumber);
 clearBtn.addEventListener('click', clear);
 resetBtn.addEventListener('click', reset);
+minInput.addEventListener('blur', userMinMax);
+maxInput.addEventListener('blur', userMinMax);
+
+function userMinMax() {
+	var userMin = parseInt(minInput.value)
+	var userMax = parseInt(maxInput.value)
+	randomNumber = Math.floor(Math.random() * (userMax - userMin + 1) + userMin);
+	console.log('this ' + randomNumber)
+}
 
 function answer(event) {
 	event.preventDefault();
@@ -35,16 +48,26 @@ function enableBtn() {
 	clearBtn.disabled=false
 }
 
+function onWin() {
+	var userMin = parseInt(minInput.value);
+	var userMax = parseInt(maxInput.value);
+
+	minInput.value = userMin - 10;
+	maxInput.value = userMax + 10;
+}
+
 function checkNumber() {
+	var userMin = parseInt(minInput.value)
+	var userMax = parseInt(maxInput.value)
 	var theNumber = parseInt(firstInput.value);
 	lastGuess.innerText = "Your last guess was."
 	
-	if (theNumber > 100) {
-		feedback.innerText = "Please choose a number < or = 100"
+	if (theNumber > userMax) {
+		feedback.innerText = "Please choose a number < or = the maximum value"
 	}
 
-	else if (theNumber < 1) {
-		feedback.innerText = "Please choose a number > 0"
+	else if (theNumber < userMin) {
+		feedback.innerText = "Please choose a number > or = to the minimum value"
 	}
 
 	else if (theNumber > randomNumber) {
@@ -56,11 +79,17 @@ function checkNumber() {
 	}
 
 	else if (theNumber === randomNumber) {
-		feedback.innerText = "BOOM!"
+		feedback.innerText = "BOOM!";
+		onWin();
+		userMinMax();
+
+		console.log(minInput.value)
+		console.log(maxInput.value)
+		console.log(randomNumber)
 	}
 
 	else { 
-		feedback.innerText = "what have you done! Please enter a number."
+		feedback.innerText = "What have you done! Please enter a number."
 	}
 }
 
