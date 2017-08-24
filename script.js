@@ -22,8 +22,8 @@ maxInput.addEventListener('blur', userMinMax);
 
 // Functions
 function userMinMax() {
-	var userMin = parseInt(minInput.value)
-	var userMax = parseInt(maxInput.value)
+	var userMin = parseInt(minInput.value);
+	var userMax = parseInt(maxInput.value);
 	randomNumber = Math.floor(Math.random() * (userMax - userMin + 1) + userMin);
 }
 
@@ -58,17 +58,19 @@ function onWin() {
 
 // Function with if else logic tree
 function checkNumber() {
-	var userMin = parseInt(minInput.value)
-	var userMax = parseInt(maxInput.value)
+	var userMin = parseInt(minInput.value);
+	var userMax = parseInt(maxInput.value);
 	var theNumber = parseInt(firstInput.value);
-	lastGuess.innerText = "Your last guess was."
+	lastGuess.innerText = "Your last guess was.";
+	var guessInput = document.querySelector('.first-input');
+	guessInput.value = "";
 	
 	if (theNumber > userMax) {
-		feedback.innerText = "Please choose a number < or = the maximum value"
+		feedback.innerText = "Please choose a number < or = the maximum value";
 	}
 
 	else if (theNumber < userMin) {
-		feedback.innerText = "Please choose a number > or = to the minimum value"
+		feedback.innerText = "Please choose a number > or = to the minimum value";
 	}
 
 	else if (theNumber > randomNumber) {
@@ -76,7 +78,7 @@ function checkNumber() {
 	}
 
 	else if (theNumber < randomNumber) {
-		feedback.innerText = "That is too low."
+		feedback.innerText = "That is too low.";
 	}
 
 	else if (theNumber === randomNumber) {
@@ -86,10 +88,6 @@ function checkNumber() {
 	}
 
 	else { 
-		feedback.innerText = "What have you done! Please enter a number."
+		feedback.innerText = "What have you done! Please enter a number.";
 	}
 }
-
-// var form = document.querySelector('.first-input');
-	// form.reset();
-	// disable drop down possible?
