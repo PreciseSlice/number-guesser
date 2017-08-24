@@ -23,14 +23,12 @@ function userMinMax() {
 	var userMin = parseInt(minInput.value)
 	var userMax = parseInt(maxInput.value)
 	randomNumber = Math.floor(Math.random() * (userMax - userMin + 1) + userMin);
-	console.log('this ' + randomNumber)
 }
 
 function answer(event) {
 	event.preventDefault();
 	var theNumber = parseInt(firstInput.value);
 	guessValue.innerText = theNumber;
-	console.log(theNumber)
 	enableBtn()
 }
 
@@ -44,8 +42,8 @@ function reset(event) {
 }
 
 function enableBtn() {
-	resetBtn.disabled=false
-	clearBtn.disabled=false
+	resetBtn.disabled=false;
+	clearBtn.disabled=false;
 }
 
 function onWin() {
@@ -82,15 +80,9 @@ function checkNumber() {
 		feedback.innerText = "BOOM!";
 		onWin();
 		userMinMax();
-
-		console.log(minInput.value)
-		console.log(maxInput.value)
-		console.log(randomNumber)
 	}
 
 	else { 
 		feedback.innerText = "What have you done! Please enter a number."
 	}
 }
-
-console.log(randomNumber)
