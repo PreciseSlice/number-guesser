@@ -11,7 +11,6 @@ var maxInput = document.getElementById('max');
 var max = 100;
 var min = 0;
 
-
 guessBtn.addEventListener('click', answer);
 guessBtn.addEventListener('click', checkNumber);
 clearBtn.addEventListener('click', clear);
@@ -29,7 +28,10 @@ function answer(event) {
 	event.preventDefault();
 	var theNumber = parseInt(firstInput.value);
 	guessValue.innerText = theNumber;
-	enableBtn()
+	enableBtn();
+	// var form = document.querySelector('.first-input');
+	// form.reset();
+	// disable drop down possible?
 }
 
 function clear(event) {
@@ -49,9 +51,9 @@ function enableBtn() {
 function onWin() {
 	var userMin = parseInt(minInput.value);
 	var userMax = parseInt(maxInput.value);
-
 	minInput.value = userMin - 10;
 	maxInput.value = userMax + 10;
+	window.alert("BOOM You won! Time for the next level. Your range of numbers has grown. The minimum has decreased by -10 the maximum has increased by +10. Good luck!");
 }
 
 function checkNumber() {
