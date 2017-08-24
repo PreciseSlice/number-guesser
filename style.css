@@ -5,19 +5,17 @@ body {
 header {
 	background-color: #404041;
 	text-align: center;
-	/*padding: 0 25px;*/
 	height: 125px;
 }
 
 header h1 {
 	display: inline-block;
-	font-size: 53px;
-	margin-top: 31.25px;
-	width: 33%;
+	font-size: 55px;
+	margin-top: 31px;
+	width: 35%;
 	margin-right: auto;
 	margin-left: auto;
 	color: #ED458B;
-	padding-right: 5px;
 	font-weight: 700;
 	text-align: center;
 }
@@ -47,6 +45,7 @@ input {
 	letter-spacing: 1px;
 	padding: 5px;
 	margin-top: 10px;
+	font-family: "Open Sans", sans-serif;
 }
 
 .btn:hover {
@@ -63,7 +62,7 @@ section {
 article {
 	width: 100%;
 	margin: auto;
-	height: 175px;
+	height: 275px;
 }
 
 .first-box {
@@ -71,7 +70,7 @@ article {
 }
 
 .first-input {
-	width: 80%;
+	width: 388px;
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
@@ -100,19 +99,20 @@ article {
 }
 
 form {
-	margin-top: 30px;
+	margin-top: 20px;
 	margin-bottom: 50px;
 	display: inline-block;
 	width: 100%;
 }
 
 .value-qauntity {
-	width: 37%;
+	width: 178px;
 }
 
 .instructions {
-	width: auto;
+	width: 92%;
 	margin-bottom: 30px;
+	margin-left: 8px; 
 }
 
 h2 {
@@ -131,23 +131,25 @@ h3 {
 
 .buttons {
 	margin-bottom: 25px;
+	font-family: "Open Sans", sans-serif;
 }
 
 .second-box {
-	position: absolute;
-	margin-top: 100px;
+	margin-top: 15px;
+	height: 350px;
 }
 
 .reset-btn {
 	background-color: #929497;
 	color: #FFFFFF;
 	border-radius: 20px;
-	width: 78%;
+	width: 388px;
 	border:none;
 	font-size: 20px;
 	font-weight: 300;
 	letter-spacing: 1px;
 	margin-top: 40px;
+	font-family: "Open Sans", sans-serif;
 }
 
 .reset-btn:hover {
