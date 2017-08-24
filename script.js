@@ -21,12 +21,15 @@ minInput.addEventListener('blur', userMinMax);
 maxInput.addEventListener('blur', userMinMax);
 
 // Functions
+
+// Gathers values specified by user and generates new random number with those variables.
 function userMinMax() {
 	var userMin = parseInt(minInput.value);
 	var userMax = parseInt(maxInput.value);
 	randomNumber = Math.floor(Math.random() * (userMax - userMin + 1) + userMin);
 }
 
+// Turns input value into a number, displays number in h2, makes gues value into theNumber, turns on disabled buttons.
 function answer(event) {
 	event.preventDefault();
 	var theNumber = parseInt(firstInput.value);
@@ -34,20 +37,24 @@ function answer(event) {
 	enableBtn();
 }
 
+// Clears first input when clear button is clicked.
 function clear(event) {
 	event.preventDefault();
 	firstInput.value = null;
 }
 
+// Reloads page when reset button is clicked.
 function reset(event) {
 	window.location.reload(true);
 }
 
+// Enables buttons that are disabled on page load once the guess button is clicked.
 function enableBtn() {
 	resetBtn.disabled=false;
 	clearBtn.disabled=false;
 }
 
+// Triggers actions when user wins. Turns the values into number, and then increments max by 10, decrments min by -10. Displays alert which explains to user that they won and the new range.
 function onWin() {
 	var userMin = parseInt(minInput.value);
 	var userMax = parseInt(maxInput.value);
@@ -56,7 +63,12 @@ function onWin() {
 	window.alert("BOOM You won! Time for the next level. Your range of numbers has grown. The minimum has decreased by -10 the maximum has increased by +10. Good luck!");
 }
 
-// Function with if else logic tree
+// Function with if else logic tree.
+
+// Function turns the guess and range into a number. Displays "your last was." on h3. Displays the users last guess on h2.
+
+// If else logic runs through possible cases where user might put undisired inputs in and displays error messages. Also checks to see if user won then triggers win functions.
+
 function checkNumber() {
 	var userMin = parseInt(minInput.value);
 	var userMax = parseInt(maxInput.value);
