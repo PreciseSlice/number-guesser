@@ -1,3 +1,30 @@
+/*Where do webkits go in the order of CSS items?*/
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #D0D2D3;
+    font-family: "Open Sans", sans-serif;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #D0D2D3;
+   font-family: "Open Sans", sans-serif;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #D0D2D3;
+   font-family: "Open Sans", sans-serif;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #D0D2D3;
+   font-family: "Open Sans", sans-serif;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #D0D2D3;
+   font-family: "Open Sans", sans-serif;
+}
+
 body {
 	font-family: "Open Sans", sans-serif;
 }
@@ -34,6 +61,39 @@ input {
 	border: solid 2px #D0D2D3;
 }
 
+section {
+	text-align: center;
+	width: 33%;
+	margin: auto;
+}
+
+article {
+	width: 100%;
+	margin: auto;
+	height: 275px;
+}
+
+h2 {
+	font-size: 150px;
+	color: #EB008B;
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+
+h3 {
+	color: #404041;
+	font-weight: 300;
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+form {
+	margin-top: 20px;
+	margin-bottom: 50px;
+	display: inline-block;
+	width: 100%;
+}
+
 .btn {
 	background-color: #929497;
 	color: #FFFFFF;
@@ -53,56 +113,12 @@ input {
 	color: #FFFFFF;
 }
 
-section {
-	text-align: center;
-	width: 33%;
-	margin: auto;
-}
-
-article {
-	width: 100%;
-	margin: auto;
-	height: 275px;
-}
-
 .first-box {
 	margin-bottom: 75px;
 }
 
 .first-input {
 	width: 388px;
-}
-
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    #D0D2D3;
-    font-family: "Open Sans", sans-serif;
-}
-
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    #D0D2D3;
-   font-family: "Open Sans", sans-serif;
-}
-
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    #D0D2D3;
-   font-family: "Open Sans", sans-serif;
-}
-
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:    #D0D2D3;
-   font-family: "Open Sans", sans-serif;
-}
-
-::-ms-input-placeholder { /* Microsoft Edge */
-   color:    #D0D2D3;
-   font-family: "Open Sans", sans-serif;
-}
-
-form {
-	margin-top: 20px;
-	margin-bottom: 50px;
-	display: inline-block;
-	width: 100%;
 }
 
 .value-qauntity {
@@ -113,20 +129,6 @@ form {
 	width: 388px;
 	margin-bottom: 30px;
 	margin-left: 38px; 
-}
-
-h2 {
-	font-size: 150px;
-	color: #EB008B;
-	font-weight: 300;
-	margin-bottom: 10px;
-}
-
-h3 {
-	color: #404041;
-	font-weight: 300;
-	margin-top: 10px;
-	font-size: 20px;
 }
 
 .buttons {

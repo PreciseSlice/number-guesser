@@ -94,8 +94,3 @@ function checkNumber() {
 }
 
 console.log(randomNumber)
-
-
-
-
-
