@@ -31,20 +31,21 @@ body {
 
 header {
 	background-color: #404041;
-	text-align: center;
 	height: 125px;
+	text-align: center;
 }
 
+/*H1 should not be qualified?*/
 header h1 {
+	color: #ED458B;
 	display: inline-block;
 	font-size: 55px;
-	margin-top: 31px;
-	width: 35%;
-	margin-right: auto;
-	margin-left: auto;
-	color: #ED458B;
 	font-weight: 700;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 31px;
 	text-align: center;
+	width: 35%;
 }
 
 span {
@@ -53,57 +54,56 @@ span {
 }
 
 input {
-	margin-bottom: 25px;
-	margin-right: 15px;
+	border: solid 2px #D0D2D3;
 	font-size: 23px;
 	font-weight: 300;
+	margin-bottom: 25px;
+	margin-right: 15px;
 	padding: 3px;
-	border: solid 2px #D0D2D3;
 }
 
 section {
+	margin: auto;
 	text-align: center;
 	width: 33%;
-	margin: auto;
 }
 
 article {
-	width: 100%;
-	margin: auto;
 	height: 275px;
+	margin: auto;
+	width: 100%;
 }
 
 h2 {
-	font-size: 150px;
 	color: #EB008B;
+	font-size: 150px;
 	font-weight: 300;
 }
 
 h3 {
 	color: #404041;
+	font-size: 20px;
 	font-weight: 300;
 	margin-top: 7px;
-	font-size: 20px;
 }
 
 form {
-	margin-top: 32px;
 	display: inline-block;
+	margin-top: 32px;
 	width: 100%;
 }
 
 .btn {
 	background-color: #929497;
-	color: #FFFFFF;
-	border-radius: 20px;
-	width: 40%;
 	border: none;
+	border-radius: 20px;
+	color: #FFFFFF;
+	font-family: "Open Sans", sans-serif;
 	font-size: 20px;
 	font-weight: 300;
 	letter-spacing: 1px;
-	padding: 5px;
 	margin-top: 10px;
-	font-family: "Open Sans", sans-serif;
+	width: 40%;
 }
 
 .btn:hover {
@@ -124,9 +124,9 @@ form {
 }
 
 .instructions {
-	width: 385px;
 	margin-bottom: 30px;
-	margin-left: 38px; 
+	margin-left: 38px;
+	width: 385px;
 }
 
 .buttons {
@@ -134,27 +134,29 @@ form {
 }
 
 .second-box {
-	margin-top: 15px;
 	height: 350px;
+	margin-top: 15px;	
 }
 
 .reset-btn {
 	background-color: #929497;
-	color: #FFFFFF;
-	border-radius: 20px;
-	width: 396px;
 	border:none;
+	border-radius: 20px;
+	color: #FFFFFF;
+	font-family: "Open Sans", sans-serif;
 	font-size: 20px;
 	font-weight: 300;
 	letter-spacing: 1px;
 	margin-top: 40px;
-	font-family: "Open Sans", sans-serif;
+	width: 396px;	
 }
 
 .reset-btn:hover {
 	background-color: #EB008B;
 	color: #FFFFFF;
 }
+
+/*Where do these go in CSS order?*/
 
 :disabled {
 	background-color: #D0D2D3;

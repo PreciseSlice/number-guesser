@@ -10,7 +10,7 @@
 	<body>
 
 		<header>
-			<h1>Number <span>Guesser</span></h1>
+			<h1>Number <span role="Span for styling">Guesser</span></h1>
 		</header>
 
 		<section>
@@ -18,12 +18,12 @@
 				<form>
 					<h3 class="instructions">Pick a number between 1 and 100 or enter your own range of numbers below!
 					</h3>
-					<span>
-					<input class="value-qauntity" id="min" type="number" name="min" placeholder="min value"> 
-					<input class="value-qauntity" id="max" type="number" name="max" placeholder="max value"> 
+					<span role="span for styling">
+					<input class="value-qauntity" id="min" type="number" role="minimum value entry field" name="min" placeholder="min value"> 
+					<input class="value-qauntity" role="maximum value enrty field" id="max" type="number" name="max" placeholder="max value"> 
 					</span>
-					<input class="first-input" type ="number" name="guess" placeholder="Enter your guess"/>
-					<div class="buttons">
+					<input class="first-input" type ="number" name="guess" role="guess entry field" placeholder="Enter your guess"/>
+					<div class="buttons" role="div for button styling">
 					<input class="btn" id="guess-btn" type="submit" name="submit-guess" value="Guess"/>
 					<input class="btn" id="clear-button" type="submit" disabled  name="clear" value="Clear"/>
 					</div>
@@ -31,9 +31,9 @@
 			</article>
 
 			<article id="second-box">
-				<h3 class="last-guess">Step right up!</h3>
+				<h3 class="last-guess"s>Step right up!</h3>
 				<div> 
-				<h2 class="guess-value">?</h2>
+				<h2 class="guess-value" role="displays guess value">?</h2>
 				</div>
 				<h3 class="feedback">Take a guess!</h3>
 				<form>

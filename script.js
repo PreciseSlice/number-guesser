@@ -1,3 +1,4 @@
+// Global variables 
 var randomNumber = Math.floor(Math.random() * 100 );
 var guessBtn = document.getElementById('guess-btn');
 var firstInput = document.querySelector('.first-input');
@@ -11,6 +12,7 @@ var maxInput = document.getElementById('max');
 var max = 100;
 var min = 0;
 
+// Event listeners
 guessBtn.addEventListener('click', answer);
 guessBtn.addEventListener('click', checkNumber);
 clearBtn.addEventListener('click', clear);
@@ -18,6 +20,7 @@ resetBtn.addEventListener('click', reset);
 minInput.addEventListener('blur', userMinMax);
 maxInput.addEventListener('blur', userMinMax);
 
+// Functions
 function userMinMax() {
 	var userMin = parseInt(minInput.value)
 	var userMax = parseInt(maxInput.value)
@@ -29,9 +32,6 @@ function answer(event) {
 	var theNumber = parseInt(firstInput.value);
 	guessValue.innerText = theNumber;
 	enableBtn();
-	// var form = document.querySelector('.first-input');
-	// form.reset();
-	// disable drop down possible?
 }
 
 function clear(event) {
@@ -56,6 +56,7 @@ function onWin() {
 	window.alert("BOOM You won! Time for the next level. Your range of numbers has grown. The minimum has decreased by -10 the maximum has increased by +10. Good luck!");
 }
 
+// Function with if else logic tree
 function checkNumber() {
 	var userMin = parseInt(minInput.value)
 	var userMax = parseInt(maxInput.value)
@@ -88,3 +89,7 @@ function checkNumber() {
 		feedback.innerText = "What have you done! Please enter a number."
 	}
 }
+
+// var form = document.querySelector('.first-input');
+	// form.reset();
+	// disable drop down possible?
