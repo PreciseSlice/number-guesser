@@ -1,16 +1,16 @@
-// Global variables 
-var randomNumber = Math.floor(Math.random() * 100 );
-var guessBtn = document.getElementById('guess-btn');
-var firstInput = document.querySelector('.first-input');
-var guessValue = document.querySelector('.guess-value');
-var clearBtn = document.getElementById('clear-button');
-var feedback = document.querySelector('.feedback');
-var resetBtn = document.querySelector('.reset-btn');
-var lastGuess = document.querySelector('.last-guess');
-var minInput = document.getElementById('min');
-var maxInput = document.getElementById('max');
-var max = 100;
-var min = 0;
+	// Global variables 
+	var randomNumber = Math.floor(Math.random() * 100 );
+	var guessBtn = document.getElementById('guess-btn');
+	var firstInput = document.querySelector('.first-input');
+	var guessValue = document.querySelector('.guess-value');
+	var clearBtn = document.getElementById('clear-button');
+	var feedback = document.querySelector('.feedback');
+	var resetBtn = document.querySelector('.reset-btn');
+	var lastGuess = document.querySelector('.last-guess');
+	var minInput = document.getElementById('min');
+	var maxInput = document.getElementById('max');
+	var max = 100;
+	var min = 0;
 
 // Event listeners
 guessBtn.addEventListener('click', answer);
